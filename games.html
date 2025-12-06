@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     <meta name="description" content="Browse our collection of free demo slot games and casino entertainment. Play classic slots, table games, and more - all 100% free!">
-    <meta name="keywords" content="slot games, casino games, demo slots, free games, table games, ChillReel">
-    <meta name="author" content="ChillReel Social Casino">
+    <meta name="keywords" content="slot games, casino games, demo slots, free games, table games, FindEx Games">
+    <meta name="author" content="FindEx Games">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#6B46C1">
-    <title>Games - ChillReel Social Casino</title>
-    <link rel="canonical" href="https://chillreel.com/games.html">
+    <title>Games - FindEx Games</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="canonical" href="https://findexgames.com/games.html">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -567,8 +568,8 @@
     <header>
         <div class="header-container">
             <a href="index.html" class="logo">
-                <svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM7.5 18C6.67 18 6 17.33 6 16.5S6.67 15 7.5 15s1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm0-9C6.67 9 6 8.33 6 7.5S6.67 6 7.5 6 9 6.67 9 7.5 8.33 9 7.5 9zm4.5 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm4.5 4.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm0-9c-.83 0-1.5-.67-1.5-1.5S15.67 6 16.5 6 18 6.67 18 7.5 17.33 9 16.5 9z"/></svg>
-                <span>ChillReel</span>
+                <img src="images/logo.png" alt="FindEx Games Logo" style="height: 40px; width: auto;">
+                <span>FindEx Games</span>
             </a>
             <nav>
                 <ul class="nav-menu" id="navMenu">
@@ -614,6 +615,23 @@
     </div>
 
     <main>
+        <section class="section">
+            <div class="game-container" style="background: rgba(0, 0, 0, 0.5); border-radius: 20px; padding: 20px; margin: 2rem 0; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); border: 2px solid #ffd700;">
+                <h2 style="text-align: center; color: #ffd700; margin-bottom: 1rem; font-size: 2rem;">🎰 Slot Game Demo</h2>
+                <div class="game-wrapper" style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; border-radius: 15px; overflow: hidden; background: #000;">
+                    <div class="loading-overlay" id="loadingOverlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #1a1a2e, #16213e); display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 10; border-radius: 15px;">
+                        <div class="loading-spinner" style="width: 50px; height: 50px; border: 5px solid rgba(255, 215, 0, 0.3); border-top: 5px solid #ffd700; border-radius: 50%; animation: spin 1s linear infinite; margin-bottom: 1rem;"></div>
+                        <div class="loading-text" style="color: #ffd700; font-size: 1.2rem; font-weight: bold;">Loading Olympus Wins...</div>
+                    </div>
+                    <iframe id="gameFrame" class="game-iframe" src="https://released.playngonetwork.com/casino/ContainerLauncher?pid=2&gid=riseofolympusextreme&lang=en_GB&practice=1&channel=desktop&demo=2" allow="fullscreen" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; border-radius: 15px;"></iframe>
+                </div>
+                <div class="game-controls" style="display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap;">
+                    <button class="control-button" onclick="refreshGame()" style="background: linear-gradient(145deg, #34495e, #2c3e50); color: white; border: 2px solid #ffd700; padding: 12px 24px; border-radius: 25px; cursor: pointer; font-weight: bold; transition: all 0.3s ease;">🔄 Refresh Game</button>
+                    <button class="control-button" onclick="toggleFullscreen()" style="background: linear-gradient(145deg, #34495e, #2c3e50); color: white; border: 2px solid #ffd700; padding: 12px 24px; border-radius: 25px; cursor: pointer; font-weight: bold; transition: all 0.3s ease;">⛶ Fullscreen</button>
+                    <button class="control-button" onclick="toggleSound()" style="background: linear-gradient(145deg, #34495e, #2c3e50); color: white; border: 2px solid #ffd700; padding: 12px 24px; border-radius: 25px; cursor: pointer; font-weight: bold; transition: all 0.3s ease;">🔊 Sound</button>
+                </div>
+            </div>
+        </section>
         <section class="section" id="slots">
             <div class="category-filter">
                 <button class="filter-btn active" data-category="all">All Games</button>
@@ -755,7 +773,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-section">
-                <h3>ChillReel</h3>
+                <h3>FindEx Games</h3>
                 <p>Your premier destination for social casino gaming. Play responsibly and enjoy the thrill of demo slot games.</p>
             </div>
             <div class="footer-section">
@@ -779,8 +797,14 @@
                 <a href="blog.html">Blog</a>
             </div>
         </div>
+        <div class="footer-redirects" style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap;">
+            <a href="https://gamblinghelpline.co.nz/" target="_blank" rel="noopener noreferrer" style="color: var(--text-light); text-decoration: none; padding: 0.5rem 1rem; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s;">Gambling Helpline NZ</a>
+            <a href="https://responsiblegambling.org/" target="_blank" rel="noopener noreferrer" style="color: var(--text-light); text-decoration: none; padding: 0.5rem 1rem; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s;">Responsible Gambling</a>
+            <a href="https://www.health.govt.nz/regulation-legislation/mental-health-and-addiction/gambling-act" target="_blank" rel="noopener noreferrer" style="color: var(--text-light); text-decoration: none; padding: 0.5rem 1rem; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.3s;">NZ Ministry of Health</a>
+        </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 ChillReel Social Casino. All rights reserved. | For entertainment purposes only. No real money gambling.</p>
+            <p>&copy; 2025 Therapy Place Social Casino Games Platform.</p>
+            <p><strong>18+ Only</strong> | <strong>No Real Money</strong> | <strong>Play Responsibly</strong></p>
         </div>
     </footer>
 
@@ -900,6 +924,77 @@
                 document.body.appendChild(announcement);
                 setTimeout(() => document.body.removeChild(announcement), 1000);
             });
+
+        // Game functionality
+        let gameLoaded = false;
+        let soundEnabled = true;
+
+        // Handle iframe loading
+        const gameFrame = document.getElementById('gameFrame');
+        if (gameFrame) {
+            gameFrame.addEventListener('load', function() {
+                setTimeout(() => {
+                    const loadingOverlay = document.getElementById('loadingOverlay');
+                    if (loadingOverlay) {
+                        loadingOverlay.style.display = 'none';
+                    }
+                    gameLoaded = true;
+                }, 2000);
+            });
+        }
+
+        // Refresh game function
+        function refreshGame() {
+            const gameFrame = document.getElementById('gameFrame');
+            const loadingOverlay = document.getElementById('loadingOverlay');
+            if (gameFrame && loadingOverlay) {
+                loadingOverlay.style.display = 'flex';
+                gameLoaded = false;
+                gameFrame.src = gameFrame.src;
+            }
+        }
+
+        // Fullscreen functionality
+        function toggleFullscreen() {
+            const gameFrame = document.getElementById('gameFrame');
+            if (gameFrame) {
+                if (!document.fullscreenElement) {
+                    gameFrame.requestFullscreen().catch(err => {
+                        console.log('Error attempting to enable fullscreen:', err);
+                    });
+                } else {
+                    document.exitFullscreen();
+                }
+            }
+        }
+
+        // Sound toggle function
+        function toggleSound() {
+            soundEnabled = !soundEnabled;
+            const button = event.target;
+            button.textContent = soundEnabled ? '🔊 Sound' : '🔇 Sound';
+            try {
+                const gameFrame = document.getElementById('gameFrame');
+                if (gameFrame && gameFrame.contentWindow) {
+                    gameFrame.contentWindow.postMessage({
+                        action: 'toggleSound',
+                        enabled: soundEnabled
+                    }, '*');
+                }
+            } catch (e) {
+                console.log('Cannot control iframe sound due to CORS restrictions');
+            }
+        }
+
+        // Add spin animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes spin {
+                0% { transform: rotate(0deg); }
+                100% { transform: rotate(360deg); }
+            }
+        `;
+        document.head.appendChild(style);
 
             // Keyboard support
             btn.addEventListener('keydown', (e) => {
